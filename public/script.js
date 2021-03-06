@@ -29,9 +29,15 @@ async function windowActions(){
     const matchArray = findMatches(event.target.value, restaurants_name);
     const html = matchArray.map(name => {
       return `
-        <li>
-          <span class="name">${name.name}, ${name.category} ,${name.address_line_1}, ${name.zip} </span>
-        </li>
+        <ul>
+          <li>
+            <span class="name">
+              ${name.name} <br>
+              ${name.category}<br>
+              ${name.address_line_1}<br>
+              ${name.zip} </span>
+          </li>
+        </ul>
       `;
     });
 
