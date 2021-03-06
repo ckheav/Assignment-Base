@@ -27,14 +27,14 @@ async function windowActions(){
 
   function displayMatches(event) {
     const matchArray = findMatches(event.target.value, restaurants_name);
-    const html = matchArray.map(name => {
+    const html = matchArray.map(names => {
       return `
         <li>
-          <span class="name">
-            ${name.name} <br>
-            ${name.category}<br>
-            ${name.address_line_1}<br>
-            ${name.zip} 
+          <span class="names">
+            ${names.name} <br>
+            ${names.category}<br>
+            ${names.address_line_1}<br>
+            ${names.zip} 
           </span>
         </li>
       `;
