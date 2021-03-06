@@ -1,11 +1,10 @@
 async function windowActions(){
   const endpoint = "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json";
   console.log(endpoint);
-  const restaurants_name = [];
+  
 
   const request = await fetch(endpoint)
-    .then((blob) => blob.json())
-    .then((data) => restaurants_name.push(...data));
+  const restaurants_name = await request.json()
   console.log(restaurants_name);
 
   let userInput = document.querySelector("#userInput");
