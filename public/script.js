@@ -24,3 +24,4 @@ function findMatches(wordToMatch, restaurants) {
     return name.name.match(regex) || name.zip.match(regex);
   });
 }
+
