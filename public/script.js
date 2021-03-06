@@ -19,9 +19,9 @@ async function windowActions(){
   });
 
   function findMatches(wordToMatch, restaurants) {
-    return restaurants.filter((name) => {
+    return restaurants.filter((names) => {
       const regex = new RegExp(wordToMatch, "gi");
-      return name.name.match(regex) || name.zip.match(regex) || name.category.match(regex);
+      return names.name.match(regex) || names.zip.match(regex) || names.category.match(regex);
     });
   }
 
