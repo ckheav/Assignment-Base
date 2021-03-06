@@ -31,9 +31,9 @@ async function windowActions(){
       return `
         <li>
           <span class="names">
-            ${names.name} <br>
-            ${names.category}<br>
-            ${names.address_line_1}<br>
+            ${names.name}
+            ${names.category}
+            ${names.address_line_1}
             ${names.zip} 
           </span>
         </li>
