@@ -31,7 +31,7 @@ async function windowActions(){
     const html = matchArray.map(name => {
       return `
         <li>
-          <span class="name">${name.name}, ${name.city}, ${name.zip}</span>
+          <span class="name">${name.name}, ${name.address_line_1}, ${name.zip} : ${name.category}</span>
         </li>
       `;
     });
