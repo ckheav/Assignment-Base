@@ -39,28 +39,26 @@ input.search {
 }
 
 .suggestions {
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    align-items: center;
+    margin-right: 500px;
 }
 
 
 .suggestions li {
-    background: white;
+    background: #eed06d;
     list-style: none;
     border-bottom: 1px solid #D8D8D8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
-    margin: 30px;
+    margin: 25px;
     padding: 0px;
     transition: background 0.2s;
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
+    width: 500px;
 }
 
 .suggestions li:nth-child() {
-    background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
+    background: linear-gradient(to bottom, yellow 0%, #d4d248 100%);
 }
 
 span.statecode {
@@ -72,9 +70,8 @@ span.statecode {
 }
 
 .header {
-    font-family: "Papyrus", Times, serif;
+    font-family: "DotGothic16", Times, serif;
     font-size: 40px;
-    text-decoration: underline;
     color: white;
     margin-bottom: 15px;
 
@@ -85,5 +82,6 @@ span.statecode {
 }
 
 .names {
-   white-space: pre; 
+   white-space: pre;
+   display: block;
 }

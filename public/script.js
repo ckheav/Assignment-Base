@@ -36,8 +36,7 @@ async function windowActions(){
             ${names.address_line_1}
             ${names.zip} 
           </span>
-        </li>
-      `;
+        </li>`;
     });
 
     suggestions.innerHTML = html;
