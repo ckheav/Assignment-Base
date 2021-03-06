@@ -1,5 +1,4 @@
-const endpoint =
-  "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json";
+const endpoint = "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json";
 console.log(endpoint);
 const restaurants_name = [];
 
